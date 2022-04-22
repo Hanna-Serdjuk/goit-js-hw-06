@@ -17,6 +17,7 @@ function onInputBlur(event) {
     
     if (event.currentTarget.value.length === Number(inputFormEl.getAttribute('data-length'))) {
         inputFormEl.classList.add('valid');
+        inputFormEl.classList.remove('invalid');
     } else {
         inputFormEl.classList.remove('valid');
         inputFormEl.classList.add('invalid');
