@@ -28,14 +28,16 @@ const refs = {
 
 const createBox = (value) => {
   value = refs.input.value;
-  let boxSize = 30;
+  let width = 30;
+  let height = 30;
   const elements = [];
 
   for (let i = 0; i < value; i +=1) {
     const newBox = document.createElement("div");
-    let changeBoxSize = boxSize + (i * 10);
-    newBox.style.width = `${changeBoxSize}px`;
-    newBox.style.height = `${changeBoxSize}px`;
+    width += 10;
+    height += 10;
+    newBox.style.width = `${width}px`;
+    newBox.style.height = `${height}px`;
     newBox.style.backgroundColor = getRandomHexColor();
     elements.push(newBox);
   }

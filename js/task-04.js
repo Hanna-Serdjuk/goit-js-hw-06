@@ -10,12 +10,12 @@ let counterValue = document.querySelector('#value');
 let counterNumber = 0;
 
 const onIncrementBtnClick = () => {
-counterNumber += 1;
+    counterNumber += 1;
     counterValue.textContent = counterNumber;
 }
 
 const onDecrementBtnClick = () => {
-counterNumber -= 1;
+    counterNumber -= 1;
     counterValue.textContent = counterNumber;
 }
 
